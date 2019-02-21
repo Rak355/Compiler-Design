@@ -21,4 +21,5 @@
 
 #How to build:
 **build and run are consecutive process.**
+
 To run: `$make run`
