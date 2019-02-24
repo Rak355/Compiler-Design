@@ -1,3 +1,17 @@
+/******************************************************************************************************
+Lexer for C Compiler.
+Author: Rakesh Kumar Lal.
+
+How to use this lexer:
+follow the README.md instruction.
+
+Please report bugs by raising an issue on the git repository.
+*******************************************************************************************************/
+
+#include <types.h>
+#include <commons.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 FILE *log_file;
 
@@ -307,6 +321,7 @@ void scanner(){
           t[chain_id].lexeme_chain[t[chain_id].chain_size++] = temp_lexeme;
           counter++;
         }else{
+          if(temp_lexeme=='\n') line_no++;
           counter--;
           chain_id++;
           break;
@@ -338,6 +353,7 @@ void scanner(){
               t[chain_id].lexeme_chain[t[chain_id].chain_size++] = temp_lexeme;
               counter++;
             }else{
+              if(temp_lexeme=='\n') line_no++;
               counter--;
               chain_id++;
               break;
@@ -350,6 +366,7 @@ void scanner(){
           t[chain_id].lexeme_chain[t[chain_id].chain_size++] = temp_lexeme;
           counter++;
         }else{
+          if(temp_lexeme=='\n') line_no++;
           counter--;
           chain_id++;
           break;
@@ -368,6 +385,7 @@ void scanner(){
           t[chain_id].lexeme_chain[t[chain_id].chain_size++] = temp_lexeme;
           counter++;
         }else{
+          if(temp_lexeme=='\n') line_no++;
           counter--;
           chain_id++;
           break;
@@ -412,5 +430,4 @@ void lexer(){
   printf("\n%s\n","tokens:");
   //debugger
   print_it();
-
 }
