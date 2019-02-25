@@ -3,9 +3,10 @@ obj = ./obj
 inc = ./inc
 
 clean:
+	rm -rf obj
 	mkdir obj
 	clear
-	rm -f obj/*.o
+	
 
 compile: clean
 	gcc -c src/main.c -o obj/main.o -I inc

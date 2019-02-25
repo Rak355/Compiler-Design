@@ -427,7 +427,7 @@ void lexer(){
   log_file = fopen("log.txt","w");
   initialize_token();
   scanner();
-  printf("\n%s\n","tokens:");
+  printf("\n%s\n","Lexer analysis done, log file created");
   //debugger
   print_it();
 }
