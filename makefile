@@ -3,6 +3,7 @@ obj = ./obj
 inc = ./inc
 
 clean:
+	mkdir obj
 	clear
 	rm -f obj/*.o
 
