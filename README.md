@@ -32,4 +32,4 @@ to build and run: $make run
 3. Suffixes on literals are not supported yet.
 4. The lexer does not distinguishes between the identifiers and the keywords.
 
-## Please report any bug by raising an issue on the repository.
+**Please report any bugs by raising an issue on the repository.**
